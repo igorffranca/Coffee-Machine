@@ -51,6 +51,9 @@ money = 0
 while True:
     choice = input("\nWhat would you like? (espresso/latte/cappuccino): ").lower().strip()
 
+    if choice == "off":
+        break
+
     if choice == "report":
         print(f"\nWater: {resources['water']}ml\nMilk: {resources['milk']}ml\nCoffee: {resources['coffee']}g\nMoney: ${money}")
         continue
